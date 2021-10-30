@@ -1,0 +1,123 @@
+body {
+    margin:0 auto;
+    padding: 25px;
+    font-family: sans-serif;
+}
+
+.btn {
+    display: inline-block;
+    background-color: white;
+    color: black;
+    font-weight: 700;
+    text-decoration: none;
+    user-select: none;
+    padding: .5em 2em;
+    outline: none;
+    border: 2px solid;
+    border-radius: 1px;
+    transition: 0.2s;
+    margin-left: -0.4em;
+}
+.btn:hover { 
+    background: skyblue;
+}
+.btn:active { 
+    background: deepskyblue; 
+}
+
+.qlabel {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.line {
+    width: 52%; 
+    margin: 0 auto;
+    border-top: 0.15em solid deepskyblue;
+    opacity: 0.3;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.parent {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: auto;
+}
+
+.option {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+.check {
+    padding-left: 1.2em;
+}
+.check_input {
+    position: absolute;
+    -webkit-appearance: none;
+}
+.check_box {
+    position: absolute;
+    margin-left: -1.4em;
+    margin-top: 0.1em;
+    width: 1em;
+    height: 1em;
+    box-shadow: 0 0 0 0.1em black;
+    border-radius: 0.1em;
+    background-color: white;
+}
+/*CHECKED*/
+.check_input:checked + .check_box {
+    opacity: 0;
+    background-color: deepskyblue;
+    transition: 0.3s;
+    opacity: 1;
+}
+.check_input:hover + .check_box {
+    opacity: 0;
+    background-color: deepskyblue;
+    transition: 0.3s;
+    opacity: 1;
+}
+
+/*RADIO*/
+.rad {
+    padding-left: 1.2em;
+}
+.rad_input {
+    position: absolute;
+    -webkit-appearance: none;
+}
+.rad_box {
+    position: absolute;
+    margin-left: -1.4em;
+    margin-top: 0.1em;
+    width: 1em;
+    height: 1em;
+    box-shadow: 0 0 0 0.1em black;
+    border-radius: 1em;
+    background-color: white;
+}
+.rad_input:checked + .rad_box {
+    opacity: 0;
+    background-color: deepskyblue;
+    transition: 0.3s;
+    opacity: 1;
+}
+.rad_input:hover + .rad_box {
+    opacity: 0;
+    background-color: deepskyblue;
+    transition: 0.3s;
+    opacity: 1;
+}
+
+.alignleft {
+    float: left;
+  }
+.alignright {
+    float: right;
+  }
