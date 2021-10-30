@@ -22,7 +22,7 @@ let q2 = {
 }
 
 let q3 = {
-    type: 'checkbox',
+    type: 'radio',
     length: 2,
     quest: 'Вопрос №3',
     answer: [
