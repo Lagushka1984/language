@@ -63,7 +63,6 @@ function check() {
     for (let i = 0; i < question.length; i++) {
         vls.push(document.getElementById('' + i).checked);
     }
-    console.log(vls);
     for (let i = 0; i < vls.length; i++) {
         if (vls[i] == true) {
             question.vls[i]();
