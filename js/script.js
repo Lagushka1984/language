@@ -64,6 +64,11 @@ function check() {
         vls.push(document.getElementById('' + i).checked);
     }
     console.log(vls);
+    for (let i = 0; i < vls.length; i++) {
+        if (vls[i] == true) {
+            question.vls[i]();
+        }
+    }
     if (vls.indexOf(true) != -1) {
         return true;
     }

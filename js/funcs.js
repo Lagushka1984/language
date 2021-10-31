@@ -1,0 +1,4 @@
+function dodge() {}
+
+function del() { 
+}
