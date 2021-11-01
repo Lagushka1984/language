@@ -121,3 +121,59 @@ body {
 .alignright {
     float: right;
   }
+
+  .tab {
+    overflow: hidden;
+    border: 1px solid deepskyblue;
+    background-color: white;
+}
+
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+.tab button:hover {
+    background-color: skyblue;
+}
+
+.tab button.active {
+    background-color: deepskyblue;
+    color: #fff;
+}
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid deepskyblue;
+    border-top: none;
+}
+
+#low {
+    width: 50px;
+    height: 20px;
+    background: deepskyblue;
+    margin-top: -1.15em;
+    margin-left: 8.5em;
+}
+
+#medium {
+    width: 100px;
+    height: 20px;
+    background: deepskyblue;
+    margin-top: -1.15em;
+    margin-left: 8.5em;
+}
+
+#high {
+    width: 150px;
+    height: 20px;
+    background: deepskyblue;
+    margin-top: -1.15em;
+    margin-left: 8.5em;
+}

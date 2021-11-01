@@ -55,7 +55,9 @@ function next() {
 function last() {
     document.getElementById('page-title').innerHTML = '<h1>Результат</h1>'
     document.getElementById('qName').innerHTML = '';
-    document.getElementById('question').innerHTML = '<h4>Блок с результатами</h4>';
+    genResult();
+    openLang(first);
+    document.getElementById(first + '1').className = 'tablinks active';
 }
 
 function check() {
