@@ -33,3 +33,22 @@ function setLongTimeTrue() {
 function setLongTimeFalse() {
     longTime = false;
 }
+
+function appendGroup(group) {
+    for (let i = 0; i < group.length; i++) {
+        if (results.indexOf(group[i]) == -1 ) {
+            results.push(group[i]);
+        }
+    }
+}
+
+function appGames() { appendGroup(GAMES); }
+function appSites() { appendGroup(SITES); }
+function appIOS() { appendGroup(IOS); }
+function appAndroid() { appendGroup(ANDROID); }
+function appMACOS() { appendGroup(MACOS); }
+function appWindows() { appendGroup(WINDOWS); }
+function appLinux() { appendGroup(LINUX); }
+function appMicro() { appendGroup(MICRO); }
+function appBase() { appendGroup(BASE); }
+function appIIMO() { appendGroup(IIMO); }

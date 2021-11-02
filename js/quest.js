@@ -84,8 +84,54 @@ let q5 = {
     ]
 }
 
+let q6 = {
+    type: 'radio',
+    length: 2,
+    quest: 'Знаете ли вы чем низкоуровневое программирование отличается от высокоуровнего?',
+    answer: [
+        'Да',
+        'Нет'
+    ],
+    vls: [
+        levelPlus2,
+        levelMinus2
+    ]
+}
+
+let q7 = {
+    type: 'checkbox',
+    length: 10,
+    quest: 'Выберите интересующие вас темы:',
+    answer: [
+        'Игры',
+        'Сайты',
+        'Приложения под IOS',
+        'Приложения под Android',
+        'Программы под MACOS',
+        'Программы под Windows',
+        'Программы под Linux',
+        'Робототехника',
+        'Базы данных',
+        'Исскуственный интелект и машинное обучение'
+    ],
+    vls: [
+        appGames,
+        appSites,
+        appIOS,
+        appAndroid,
+        appMACOS,
+        appWindows,
+        appLinux,
+        appMicro,
+        appBase,
+        appIIMO
+    ]
+}
+
 let QQ = [];
 QQ.push(q1);
 QQ.push(q3);
 QQ.push(q4);
 QQ.push(q5);
+QQ.push(q6);
+QQ.push(q7);
