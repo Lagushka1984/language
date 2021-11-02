@@ -14,7 +14,6 @@ function genTab() {
 function genTabContent(lang) {
     let content = '<div id="' + lang.name + '" class="tabcontent">';
     content = content + '<h3>' + lang.name + '</h3>';
-    console.log(lang.logo);
     content = content + '<img src="' + lang.logo + '">';
     content = content + '<div style="width: 0%; margin: 0 auto; margin-top: -6.3em;">';
     content = content + '<label style="margin-left: 0em;">Универсальность</label>';
@@ -27,7 +26,10 @@ function genTabContent(lang) {
     content = content + '<div id="' + lang.relevance + '"></div>';
     content = content + '<label style="margin-left: 3.3em;">Мощность</label>';
     content = content + '<div id="' + lang.power + '"></div></div>';
-    content = content + '<p>' + lang.basic + '</p></div>';
+    content = content + '<p>' + lang.basic + '</p>';
+    content = content + '<p>' + lang.wide + '</p>';
+    content = content + genLinks(lang);
+    content = content + '</div>';
     return content;
 }
 
@@ -38,4 +40,13 @@ function genResult() {
         rs = rs + genTabContent(results[i]);
     }
     document.getElementById('main').innerHTML = rs;
+}
+
+function genLinks(lang) {
+    let link = '<p>Полезные ссылки </p><ul>';
+    for (let i = 0; i < lang.links.length; i++) {
+        link = link + '<li>' + '<a target="_blank" href="' + lang.links[i] + '">' + lang.links[i] + '</a>' + '</li>';
+    }
+    link = link + '</ul>';
+    return link;
 }

@@ -41,8 +41,14 @@ function reset() {
 }
 
 function next() {
+    console.log(level, longTime);
     if (check()) {
+        if (finish == false) {
         genQuestion();
+        }
+        else {
+            last();
+        }
     }
     else {
         qq--;

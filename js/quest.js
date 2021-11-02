@@ -14,21 +14,23 @@ let q1 = {
 
 let q2 = {
     type: 'radio',
-    length: 5,
+    length: 6,
     quest: 'Как вы оцениваете свои навыки?',
     answer: [
         'Отлично',
         'Хорошо',
         'Средне',
         'Неплохо',
-        'Плохо'
+        'Плохо',
+        'Нет навыков'
     ],
     vls: [
-        levelPlus5,
-        levelPlus4,
-        levelPlus3, 
-        levelPlus2,
-        dodge
+        levelSet30,
+        levelSet24,
+        levelSet18, 
+        levelSet12,
+        levelSet6,
+        levelSet0
     ]
 }
 
@@ -42,12 +44,48 @@ let q3 = {
         'Только для ЕГЭ/ОГЭ'
     ],
     vls: [
-        dodge,
-        dodge,
-        dodge
+        setLongTimeTrue,
+        setLongTimeFalse,
+        pushPython
+    ]
+}
+
+let q4 = {
+    type: 'radio',
+    length: 2,
+    quest: 'Вы готовы столкнуться с трудностями?',
+    answer: [
+        'Да',
+        'Нет'
+    ],
+    vls: [
+        levelPlus5,
+        levelMinus5
+    ]
+}
+
+let q5 = {
+    type: 'radio',
+    length: 5,
+    quest: 'Как вы оцениваете свои знания в математике?',
+    answer: [
+        'Отлично',
+        'Хорошо',
+        'Средне',
+        'Неплохо',
+        'Плохо'
+    ],
+    vls: [
+        levelPlus3,
+        levelPlus2,
+        levelPlus1, 
+        levelMinus1,
+        levelMinus2
     ]
 }
 
 let QQ = [];
 QQ.push(q1);
 QQ.push(q3);
+QQ.push(q4);
+QQ.push(q5);
