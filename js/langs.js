@@ -253,7 +253,7 @@ let css = {
     ]
 }
 
-let GAMES = [python, cpp, csharp, c, java, javascript, kotlin, php, swift];
+let GAMES = [python, cpp, csharp, c, java, javascript, kotlin, swift];
 let SITES = [python, java, javascript, ruby, php, html, css];
 let IOS = [swift, obj_c];
 let ANDROID = [python, cpp, c, java, javascript, kotlin];
