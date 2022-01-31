@@ -253,6 +253,23 @@ let css = {
     ]
 }
 
+let pascal = {
+    name: 'Pascal',
+    universality: 'low',
+    complexity: 'low',
+    threshold: 'low',
+    relevance: 'medium',
+    power: 'low',
+    logo: 'logos/pascal.jpg',
+    basic: 'Паскаль (англ. Pascal) — один из наиболее известных языков программирования, используется для обучения программированию в старших классах и на первых курсах вузов, является основой для ряда других языков.',
+    wide: '',
+    links: [
+        'https://stepik.org/course/60717/promo',
+        'https://stepik.org/course/3352/promo',
+        'https://stepik.org/course/91781/promo'
+    ]
+}
+
 let GAMES = [python, cpp, csharp, c, java, javascript, kotlin, swift];
 let SITES = [python, java, javascript, ruby, php, html, css];
 let IOS = [swift, obj_c];
