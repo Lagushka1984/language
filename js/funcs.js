@@ -20,9 +20,10 @@ function levelSet6() { level = 6; }
 function levelSet0() { level = 0; }
 
 function addQ2() {QQ.splice(1, 0, q2);}
-function pushPython() {
+function pushPythonPascal() {
     python.wide = 'Этот язык хорошо подойтет для сдачи ЕГЭ/ОГЭ. Он довольно прост в изучении, и благодаря этому можно довольно быстро подготовиться к необходимым заданиям.';
     results.push(python);
+    results.push(pascal);
     finish = true;
 }
 

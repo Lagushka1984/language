@@ -46,7 +46,7 @@ let q3 = {
     vls: [
         setLongTimeTrue,
         setLongTimeFalse,
-        pushPython
+        pushPythonPascal
     ]
 }
 
@@ -99,6 +99,22 @@ let q6 = {
 }
 
 let q7 = {
+    type: 'radio',
+    length: 2,
+    quest: 'Что важнее универсальность языка или его мощность?',
+    answer: [
+        'Универсальность',
+        'Мощность',
+        'Равнозначны'
+    ],
+    vls: [
+        main = 'universality',
+        main = 'power',
+        dodge
+    ]
+}
+
+let q8 = {
     type: 'checkbox',
     length: 10,
     quest: 'Выберите интересующие вас темы:',
@@ -135,3 +151,4 @@ QQ.push(q4);
 QQ.push(q5);
 QQ.push(q6);
 QQ.push(q7);
+QQ.push(q8);
