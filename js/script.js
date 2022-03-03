@@ -61,6 +61,9 @@ function next() {
 function last() {
     document.getElementById('page-title').innerHTML = '<h1>Результат</h1>'
     document.getElementById('qName').innerHTML = '';
+    console.log(results);
+    sortLang();
+    console.log(results);
     genResult();
     openLang(first);
     document.getElementById(first + '1').className = 'tablinks active';

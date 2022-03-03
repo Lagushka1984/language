@@ -34,10 +34,15 @@ function genTabContent(lang) {
 }
 
 function genResult() {
+    
     let rs = '';
     rs = rs + genTab();
     for (let i = 0; i < results.length; i++) {
-        rs = rs + genTabContent(results[i]);
+        try {
+            rs = rs + genTabContent(results[i]);
+        } catch(err) {
+            console.log(err);
+        }
     }
     document.getElementById('main').innerHTML = rs;
 }

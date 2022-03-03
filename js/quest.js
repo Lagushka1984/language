@@ -100,7 +100,7 @@ let q6 = {
 
 let q7 = {
     type: 'radio',
-    length: 2,
+    length: 3,
     quest: 'Что важнее универсальность языка или его мощность?',
     answer: [
         'Универсальность',
@@ -108,14 +108,14 @@ let q7 = {
         'Равнозначны'
     ],
     vls: [
-        main = 'universality',
-        main = 'power',
+        setUniversality,
+        setPower,
         dodge
     ]
 }
 
 let q8 = {
-    type: 'checkbox',
+    type: 'radio',
     length: 10,
     quest: 'Выберите интересующие вас темы:',
     answer: [
@@ -152,3 +152,119 @@ QQ.push(q5);
 QQ.push(q6);
 QQ.push(q7);
 QQ.push(q8);
+
+let g1 = {
+    type: 'radio',
+    length: 2,
+    quest: '2D или 3D?',
+    answer: [
+        '2D',
+        '3D'
+    ],
+    vls: [
+        dodge,
+        only3D
+    ]
+}
+
+let g2 = {
+    type: 'radio',
+    length: 4,
+    quest: 'На какие платформы вы хотите делать игры?',
+    answer: [
+        'Мобильные',
+        'ПК',
+        'Консоли',
+        'Веб-игры'
+    ],
+    vls: [
+        dodge,
+        dodge,
+        dodge,
+        dodge
+    ]
+}
+
+let g3 = {
+    type: 'radio',
+    length: 2,
+    quest: 'Необходимость онлайна?',
+    answer: [
+        'Нужна',
+        'Необязательно'
+    ],
+    vls: [
+        onlyOnline,
+        dodge
+    ]
+}
+
+let g4 = {
+    type: 'radio',
+    length: 2,
+    quest: 'Возможность портирования на другие платформы?',
+    answer: [
+        'Нужна',
+        'Необязательна'
+    ],
+    vls: [
+        onlyCross,
+        dodge
+    ]
+}
+
+let s1 = {
+    type: 'radio',
+    length: 2,
+    quest: 'Backend или Frontend?',
+    answer: [
+        'Backend',
+        'Frontend'
+    ],
+    vls: [
+        onlyBack,
+        onlyFront
+    ]
+}
+
+let a1 = {
+    type: 'radio',
+    length: 2,
+    quest: 'Возможность портирования приложений на ПК?',
+    answer: [
+        'Нужна',
+        'Необязательна'
+    ],
+    vls: [
+        onlyCross,
+        dodge
+    ]
+}
+
+let pc1 = {
+    type: 'radio',
+    length: 2,
+    quest: 'Возможность создавать .exe .dmg .deb?',
+    answer: [
+        'Нужна',
+        'Необязательна'
+    ],
+    vls: [
+        onlyCross,
+        dodge
+    ]
+}
+
+let pc2 = {
+    type: 'radio',
+    length: 2,
+    quest: 'Графическая состовляющая?',
+    answer: [
+        'Нужна',
+        'Необязательна'
+    ],
+    vls: [
+        onlyGraph,
+        dodge
+    ]
+}
