@@ -5,3 +5,4 @@ let results = [];
 let first = '';
 let finish = false;
 let priority = 'both'
+let ignoreSort = false;

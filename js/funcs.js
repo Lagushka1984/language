@@ -47,49 +47,64 @@ function setPower() {
     priority = 'power'
 }
 
-function setUniversality () {
+function setUniversality() {
     priority = 'universality'
 }
 
-function appGames() { 
-    appendGroup(GAMES); 
-    QQ.push(g1);
-    QQ.push(g2);
-    QQ.push(g3);
-    QQ.push(g4);
+function appGames() {
+    appendGroup(GAMES);
+    if (level > 10) {
+        QQ.push(g1);
+        QQ.push(g2);
+        QQ.push(g3);
+        QQ.push(g4);
+    }
 }
 
-function appSites() { 
-    appendGroup(SITES); 
+function appSites() {
+    appendGroup(SITES);
     QQ.push(s1);
 }
 
 function appIOS() { appendGroup(IOS); }
-function appAndroid() { 
-    appendGroup(ANDROID); 
-    QQ.push(a1);
+function appAndroid() {
+    appendGroup(ANDROID);
+    if (level > 10) QQ.push(a1);
+    ignoreSort = true;
 }
 
-function appMACOS() { 
-    appendGroup(MACOS); 
-    QQ.push(pc1);
-    QQ.push(pc2);
+function appMACOS() {
+    appendGroup(MACOS);
+    if (level > 10) {
+        QQ.push(pc1);
+        QQ.push(pc2);
+    }
+    ignoreSort = true;
 }
 
-function appWindows() { 
-    appendGroup(WINDOWS); 
-    QQ.push(pc1);
-    QQ.push(pc2);
+function appWindows() {
+    appendGroup(WINDOWS);
+    if (level > 10) {
+        QQ.push(pc1);
+        QQ.push(pc2);
+    }
 }
 
-function appLinux() { 
-    appendGroup(LINUX); 
-    QQ.push(pc1);
-    QQ.push(pc2);
+function appLinux() {
+    appendGroup(LINUX);
+    if (level > 10) {
+        QQ.push(pc1);
+        QQ.push(pc2);
+    }
 }
 
 function appMicro() { appendGroup(MICRO); }
-function appBase() { appendGroup(BASE); }
+
+function appBase() {
+    appendGroup(BASE);
+    ignoreSort = true;
+}
+
 function appIIMO() { appendGroup(IIMO); }
 
 function deleteLang(lang) {
@@ -97,7 +112,7 @@ function deleteLang(lang) {
     if (id == -1) return null;
     try {
         results.splice(id, 1);
-    } catch(err) {
+    } catch (err) {
         return err;
     }
 }
@@ -133,6 +148,7 @@ function onlyFront() {
     deleteLang(javascript);
     deleteLang(java);
     deleteLang(ruby);
+    ignoreSort = true;
 }
 
 function onlyGraph() {
@@ -161,9 +177,13 @@ function sortLang() {
         deleteLang(ruby);
         deleteLang(obj_c);
         deleteLang(java);
-        deleteLang(javascript);
         deleteLang(kotlin);
         deleteLang(swift);
         deleteLang(sql);
     }
+}
+
+function deletePC() {
+    deleteLang(c);
+    deleteLang(cpp);
 }

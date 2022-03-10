@@ -117,7 +117,7 @@ let q7 = {
 let q8 = {
     type: 'radio',
     length: 10,
-    quest: 'Выберите интересующие вас темы:',
+    quest: 'Выберите интересующую вас тему:',
     answer: [
         'Игры',
         'Сайты',
@@ -155,15 +155,17 @@ QQ.push(q8);
 
 let g1 = {
     type: 'radio',
-    length: 2,
+    length: 3,
     quest: '2D или 3D?',
     answer: [
         '2D',
-        '3D'
+        '3D',
+        'Не имеет значения'
     ],
     vls: [
         dodge,
-        only3D
+        only3D,
+        dodge
     ]
 }
 
@@ -178,7 +180,7 @@ let g2 = {
         'Веб-игры'
     ],
     vls: [
-        dodge,
+        deletePC,
         dodge,
         dodge,
         dodge

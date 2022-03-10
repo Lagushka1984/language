@@ -86,7 +86,7 @@ let java = {
 let javascript = {
     name: 'JavaScript',
     universality: 'high',
-    complexity: 'medium',
+    complexity: 'low',
     threshold: 'low',
     relevance: 'high',
     power: 'medium',
